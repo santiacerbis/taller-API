@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
-    <script src="script.js" type="text/javascript"></script>
     <title>Taller API</title>
 </head>
 <body>
-    <h1> Esto es Rick and Morty</h1>
-
+    <h1>Esto es Rick and Morty</h1>
+    <label for="characterName">¡Busca a tu personaje favorito!</label><br>
+    <input type="text" id="characterName" placeholder="Ingresa un nombre"><br>
+    <button onclick="getCharactersData()">Buscar</button>
+    <button onclick="clearSearch()">Borrar</button>
+    <div id="charactersData"></div>
+    <script src="script.js" type="text/javascript"></script>
 </body>
 </html>
