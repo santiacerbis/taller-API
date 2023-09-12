@@ -8,10 +8,14 @@
 </head>
 <body>
     <h1>Esto es Rick and Morty</h1>
+    <!-- Etiqueta y campo de entrada para buscar el personaje -->
     <label for="characterName">¡Busca a tu personaje favorito!</label><br>
     <input type="text" id="characterName" placeholder="Ingresa un nombre"><br>
+    <!-- Botón para buscar -->
     <button onclick="getCharactersData()">Buscar</button>
+    <!-- Botón para borrar la búsqueda -->
     <button onclick="clearSearch()">Borrar</button>
+    <!-- Contenedor donde se mostrarán los datos de los personajes -->
     <div id="charactersData"></div>
     <script src="script.js" type="text/javascript"></script>
 </body>
