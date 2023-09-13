@@ -99,7 +99,7 @@ input[type="text"] {
     height: auto; /* Altura automática para mantener la proporción */
     float: left; /* Hace que la imagen sea un elemento de bloque */
     margin-top: 25px; /* Espacio superior para separar la imagen del texto */
-    margin-left: 390px;
+    margin-left: 145px;
 }
 
 #charactersData img{
@@ -119,8 +119,8 @@ input[type="text"] {
     text-align: left;
     padding: 1%;
     margin-top: 10px;
-    margin-left: 750px;
-    margin-right: 350px;
+    margin-left: 350px;
+    margin-right: 175px;
 }
 /* Estilo para h4-error*/
 #charactersData h4{
