@@ -13,12 +13,12 @@ function getCharactersData() {
                 const character = data.results[0]; 
                 // Creo los elementos en HTML con la información del personaje
                 const charactersData = `
+                    <h2><img src="${character.image}" alt="${character.name}"></h2>
                     <p><strong>Nombre:</strong> ${character.name}</p>
+                    <p><strong>Género:</strong> ${character.gender}</p>
                     <p><strong>Estado:</strong> ${character.status}</p>
                     <p><strong>Especie:</strong> ${character.species}</p>
-                    <p><strong>Origen:</strong> ${character.origin.name}</p>
                     <p><strong>Ubicación:</strong> ${character.location.name}</p>
-                    <img src="${character.image}" alt="${character.name}">
                 `;
                 // Muestro los datos del personaje en el elemento con id 'charactersData'
                 document.getElementById('charactersData').innerHTML = charactersData;
@@ -27,7 +27,7 @@ function getCharactersData() {
         .catch(error => {
             // En caso de error agrego parrafo de informe + error en consola
             console.error('Error al obtener los datos:', error);
-            document.getElementById('charactersData').innerHTML = '<p>No se encontraron resultados.</p>';
+            document.getElementById('charactersData').innerHTML = '<h4>No se encontraron resultados.</h4>';
         });
 }
 function clearSearch() {
