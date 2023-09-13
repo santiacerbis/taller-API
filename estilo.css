@@ -122,6 +122,7 @@ input[type="text"] {
     margin-left: 750px;
     margin-right: 350px;
 }
+/* Estilo para h4-error*/
 #charactersData h4{
     background-color: #0a0a0ad7;
     margin-bottom: 20px;
